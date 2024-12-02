@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("/resources/fonts/Quicksand.ttf");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/resources/fonts/Comfortaa-Bold.ttf");
+}
+
+body {
+    background-color: #4e54c8;
+    background: -webkit-linear-gradient(to bottom, #4e54c8, #8f94fb);
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    height: 100vh;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+div {
+    box-sizing: border-box;
+    width: 70%;
+    margin: 10% auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 5% 10%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Comfortaa", sans-serif;
+}
+
+p {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    width: 180px;
+    background-color: #FFD04A;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    display: block;
+    margin: 30px auto;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #EFB91F;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* button animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 208, 74, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(255, 208, 74, 0);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 208, 74, 0);
+    }
+}
